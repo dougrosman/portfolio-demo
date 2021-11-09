@@ -1,0 +1,39 @@
+body {
+    background: var(--color-bg);
+    color: var(--color-primary);
+    font-family: var(--font-accent);
+}
+
+.gallery {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: .5em;
+}
+
+.image-card {
+    max-width: 300px;
+    padding: .5em;
+    display: block;
+    transition: all .5s;
+    outline: 2px solid rgba(0, 0, 0, 0);
+    text-decoration: none;
+}
+
+.image-card:hover {
+    outline: 2px solid var(--color-accent-2);
+}
+
+.image-card img {
+    width: 100%;
+}
+
+.work-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-info span {
+    color: var(--color-accent-3);
+
+}
