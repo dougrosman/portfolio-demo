@@ -1,0 +1,21 @@
+.highlight-effect {
+    position: relative;
+    max-width: max-content;
+}
+
+.highlight-effect::before {
+    content: "";
+    background: rgba(255, 255, 0);
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all .5s;
+}
+
+.highlight-effect:hover:before {
+    transform: scaleX(1);
+}
