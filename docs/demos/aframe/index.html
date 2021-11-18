@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="aframe.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>AFrame Demo</title>
+</head>
+<body>
+
+    <a-scene>
+        
+        <a-assets>
+          <a-asset-item id="hand" src="hand/hand.gltf"></a-asset-item>
+        </a-assets>
+      
+        <a-entity gltf-model="#hand" position="10 0 -50"></a-entity>
+        
+        <a-box color="#aa0000" width="1" height="1" depth="1" position="0 0 -5" ></a-box>
+        
+        <a-entity position="0 0 50">
+            <a-camera></a-camera>
+        </a-entity>
+
+        
+    </a-scene>
+</body>
+</html>
