@@ -3,7 +3,7 @@
 // page. This is useful if your menu appears on multiple pages, so that you
 // only have to change your menu in one place.
 
-const REPO_NAME = 'portfolio-demo'; // 1. CHANGE THIS TO your repo name
+const REPO_NAME = `portfolio-demo`; // 1. CHANGE THIS TO your repo name
 const ROOT_IS_DOCS = true; // 2. CHANGE THIS TO true OR false
 let prefix = setPrefix(REPO_NAME, ROOT_IS_DOCS);
 
