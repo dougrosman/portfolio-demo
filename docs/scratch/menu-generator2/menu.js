@@ -31,9 +31,11 @@ $('.main-menu').append(mainMenu)
 function setPrefix(repoName, rootIsDocs) {
   let _prefix;
   const myLocation = window.location.href;
-  if(myLocation.substring(0, 4) === 'http') {
+  if(myLocation[4] === ':') {
     console.log("Using Live Server");
+
     if(rootIsDocs) {
+      console.log("using 'docs' for the root directory");
       _prefix = "/docs/"
     } else {
       _prefix = ""
