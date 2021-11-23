@@ -31,13 +31,13 @@ function setPrefix(repoName, rootIsDocs) {
 
     if(rootIsDocs) {
       console.log("using 'docs' for the root directory");
-      _prefix = "/docs/"
+      _prefix = "/docs"
     } else {
       _prefix = ""
     }
   } else {
     console.log("Production Site");
-    _prefix = `/${repoName}/`
+    _prefix = `/${repoName}`
   }
 
   return _prefix;
