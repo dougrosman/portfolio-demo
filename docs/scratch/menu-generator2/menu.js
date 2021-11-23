@@ -21,8 +21,6 @@ $('.main-menu').append(mainMenu)
 
 
 
-
-
 //// UTILITY FUNCTIONS, LEAVE THESE UNCHANGED
 
 function setPrefix(repoName, rootIsDocs) {
